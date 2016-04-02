@@ -18,7 +18,7 @@ int binarySearch(int a[], int low, int high, int n) {
 
 // iterative
 int binarySearch(int a[], int size, int n) {
-	int low = 0;
+    int low = 0;
     int high = size - 1;
 
     while (low <= high) {
