@@ -24,6 +24,7 @@ Queue newQueue(int maxSize) {
     new->lastIndex = -1;
 }
 
+// O(1)
 bool insert(Queue q, int n) {
     if (q->currSize == q->maxSize) {
         return false;
@@ -44,6 +45,7 @@ bool insert(Queue q, int n) {
     return true;
 }
 
+// O(1)
 bool dequeue(Queue q) {
     if (q->currSize == 0) {
         return false;

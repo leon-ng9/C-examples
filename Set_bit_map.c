@@ -5,6 +5,7 @@
                                             // between 0..(NUM_BITS-1)
 typedef int bits[NUM_SECTIONS] bitMap;
 
+// O(1)
 void setBit(bitMap b, int n) {
     assert(n < NUM_BITS);
 
@@ -14,6 +15,7 @@ void setBit(bitMap b, int n) {
     b[section] |= (1 << (31 - positionInSection));
 }
 
+// O(1)
 void unsetBit(bitMap b, int n) {
     assert(n < NUM_BITS);
 

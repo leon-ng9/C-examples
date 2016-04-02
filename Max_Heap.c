@@ -14,6 +14,7 @@ Heap newHeap(int maxSize) {
     new->currSize = 0;
 }
 
+// O(log n)
 bool insert(Heap h, int n) {
     if (h->currSize == h->maxSize) {
         return false;
@@ -35,6 +36,7 @@ bool insert(Heap h, int n) {
     return true;
 }
 
+// O(log n)
 int deleteMax(Heap h) {
     assert(h->currSize < h->maxSize);
 
